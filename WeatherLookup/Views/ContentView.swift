@@ -7,15 +7,21 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @EnvironmentObject var loader: WeatherLoader
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            SearchView(loader: loader)
+                .navigationBarHidden(true)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        return ContentView()
+            .environmentObject(WeatherLoader())
     }
 }

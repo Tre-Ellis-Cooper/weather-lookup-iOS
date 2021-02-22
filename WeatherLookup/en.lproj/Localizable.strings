@@ -1,0 +1,13 @@
+//
+//  Strings.strings
+//  WeatherLookup
+//
+//  Created by Tre Cooper on 2/21/21.
+//
+
+"City_Name" = "City Name";
+"City_Format" = "%@, %@";
+"Commit_Search" = "Lookup";
+"Error_Retry" = "We encountered an Issue. Please retry!";
+"Feels_Like_Format" = "Feels Like: %@";
+"Temp_Format" = "Temp: %@";
